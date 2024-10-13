@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.box1 {
+    background-color: #6367d6; /* Sidebar color */
+    width: 20%; /* Width for sidebar */
+    height: 100%; /* Full height */
+     /* Allow scrolling if needed */
+    padding: 20px; /* Padding inside the sidebar */
+     /* Fix position */
+    margin: 0;
+    position: fixed;
+    
+}
+
+.box2 {
+    background-color: white; /* Main content color */
+    /* Leave space for the fixed sidebar */
+     /* Padding for content area */
+    color: #333; /* Text color for content */
+    flex: 1; /* Allow box2 to occupy remaining space */
+    height: 100vh; /* Ensure content area takes full height */
+     /* Allow scrolling for content if needed */
+    /* overflow: hidden; */
+    margin-left: 23%;
+    /* padding-left:10px; */
+    
+    
+
+}
+
+.img {
+    width: 150px; /* Set width for the round image */
+    height: 150px; /* Set height for the round image */
+    background-image: url('./image/Githulogo.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the div with the image */
+    background-position: center; /* Center the image */
+    border-radius: 50%; /* Make it round */
+    margin: 20px auto; /* Center the image */
+}
+
+.making-list {
+    padding: 20px; /* Padding around the list */
+    border-radius: 8px; /* Rounded corners */
+    
+    width: 30%; /* Set width as needed */
+    margin: 0px auto; /* Center the container */
+    transform: translateX(-10px); 
+}
+
+.making-list ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.making-list li {
+    padding: 10px; /* Padding for list items */
+    border-radius: 5px; /* Rounded corners for items */
+    transition: 0.2s; /* Smooth transition for background color */
+}
+
+.making-list li:hover {
+   /* background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    transform: scale(1.5);
+    font-weight: 600;
+letter-spacing: .1rem;
+text-transform: uppercase;
+/* text-align: center; */
+}
+
+h2 {
+    color: #6367d6; /* Section heading color */
+}
+/* .container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center ;
+    height: 100vh; 
+} */
+
+
+section {
+      /*Spacing between sections */
+    padding: 10px; /* Padding inside sections */
+     /* Optional border for clarity */
+    border-radius: 5px; /* Rounded corners for sections */
+  /*  background-color: #f9f9f9; Light background for sections*/
+  /* text-align: center; */
+  
+  height: 100vh;
+  background-color :white;
+}
+
+p {
+    color: #333; /* Text color for paragraph */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .box1 {
+        width: 100%; /* Full width for sidebar on small screens */
+        position: relative; /* Relative positioning for small screens */
+        height: auto; /* Allow auto height */
+        margin: 0;
+    }
+    
+    /* .box2 {
+        width: 100%; 
+        margin-left: 0; 
+    } */
+    
+    .img {
+        width: 100px; /* Smaller image size */
+        height: 100px; /* Smaller image size */
+    }
+}
+a {
+    text-decoration: none; /* Remove underline */
+    color: #a9a9a9/* Lighter color when not hovered */
+    
+}
+
+a:hover {
+    color:white; /* Darker color when hovered */
+}
